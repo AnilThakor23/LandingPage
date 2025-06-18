@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import glsl from 'vite-plugin-glsl';
 
 export default defineConfig({
-  base: '',
+  base: '/LandingPage/',
   plugins: [
     glsl({
       include: '**/*.glsl', // Glob pattern, or array of glob patterns to specify which files to include

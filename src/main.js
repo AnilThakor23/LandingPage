@@ -2,18 +2,15 @@ import './style.css'
 
 import * as THREE from 'three';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
-import { Reflector } from 'three/examples/jsm/objects/Reflector.js';
 import { SSRPass } from 'three/examples/jsm/postprocessing/SSRPass.js';
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { gsap } from "gsap";
 import * as YUKA from 'yuka';
 import fragment from '/shaders/fragment.glsl'
 import vertex from '/shaders/vertex.glsl'
-import GUI from 'lil-gui';
 import { Noise } from 'noisejs'
 import { Text } from 'troika-three-text';
 
