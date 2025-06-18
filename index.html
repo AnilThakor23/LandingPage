@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anil Thakor</title>
+  <!-- tailwind css-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#290255]  text-[white]">
+  <div class="main relative h-[100vh] w-[100vw] overflow-hidden">
+    <canvas class="canvas bg-[transperent] h-[100vh] w-[100vw] fixed top-0 left-0 z-[10]"></canvas>
+
+    <div class="videos h-[100vh] w-[100vw] overflow-hidden z-[7]">
+      <canvas id="videoCanvas" class="hidden"></canvas>
+      <video id="v1" src="videos/white.mp4"  class="opacity-0"  autoplay loop muted playsinline ></video>
+      <video id="v2" src="videos/black.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
+      <video id="v3" src="videos/blue.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
+      <video id="v4" src="videos/red.mp4"  class="opacity-0" autoplay loop muted playsinline ></video> 
+    </div>
+
+    <div class="hero z-[20] h-full w-full  absolute top-0 left-0">
+
+      <audio  controls class="opacity-0 absolute z-[0]" id="sound" src="sounds/sound2.wav" preload="auto"></audio>
+      <nav class="px-[4vw] py-[5vh] w-full flex justify-between items-center opacity-0">
+         <div class="flex gap-[2vw] h-fit"> 
+           <h1 class="text-[1.5vw]  font-[anton] tracking-wider">ANIL THAKOR</h1>
+            <div class=" flex gap-[0.5vw] items-center text-[1.1vw] opacity-[0.6]">
+              <i class="ri-github-fill"></i>      
+              <i class="ri-linkedin-box-fill"></i>   
+              <i class="ri-instagram-fill"></i>
+            </div>
+        </div>
+        <div class="flex gap-[2.5vw] items-center uppercase text-[0.9vw] font-semibold">
+           <h3 id="playSound"  class="NavButton px-[1.5vw] py-[1.5vh]  rounded-full">about me</h3>
+           <h3 id="playSound"  class="NavButton px-[1.5vw] py-[1.5vh]  rounded-full">works</h3>          
+        </div>
+      </nav>
+    </div>
+
+    <div class="loadingPage h-full w-full bg-[#290255]  z-[30] absolute top-0 left-0 flex justify-center items-center">
+      <div class="loader w-[3px] h-[0vh] bg-[white] rounded-full blur-[1.5px]"></div>
+    </div>
+
+  </div>
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
