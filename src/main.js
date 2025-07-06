@@ -17,18 +17,18 @@ import { Text } from 'troika-three-text';
 
 
 // ------------  scene ---------- //
+const canvas = document.querySelector(".canvas")
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x70329a);
 
 // ------------  camera ---------- //
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth /  window.innerHeight, 0.1, 100);
 camera.position.set(0, 2, 35);
 
 // ------------  renderer ---------- //
-const canvas = document.querySelector(".canvas")
 const renderer = new THREE.WebGLRenderer({ antialias: true , canvas ,alpha : true});
 renderer.setClearColor(0x000000, 0); 
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth , window.innerHeight);
 renderer.outputEncoding = THREE.sRGBEncoding;
 // renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -107,7 +107,7 @@ const ssrPass = new SSRPass({
   renderer,
   scene,
   camera,
-  width: window.innerWidth,
+  width: window.innerWidth ,
   height: window.innerHeight,
   // selects: [ground], // reflect the cube 
 });
@@ -313,7 +313,7 @@ const clock = new THREE.Clock()
 
 // ------------  animate function ---------- //
 
-const animate = () => {
+export const animate = () => {
   requestAnimationFrame(animate);
   cylinder.rotation.y += 0.001 
   shaderPass.uniforms.uTime.value = performance.now() / 1000
@@ -400,3 +400,9 @@ loaderTL.to(".loadingPage .loader",{
     startCylinder = 1;
   }
 })
+
+
+
+export {
+  scene,camera
+}
