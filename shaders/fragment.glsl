@@ -24,7 +24,7 @@ void main() {
     float strength = smoothstep(0.2 ,0.0 , pixelDistanceToMouse) ;
     vec2 distortion = vec2(0.04) * strength  * uMouseDirection ;
    
-    vec4 colorR = texture2D(tDiffuse , clamp(uv + distortion *0.8, 0.0, 1.0));
+    vec4 colorR = texture2D(tDiffuse , clamp(uv + distortion *0.7, 0.0, 1.0));
     vec4 colorG = texture2D(tDiffuse , clamp(uv + distortion*0.6, 0.0, 1.0));
     vec4 colorB = texture2D(tDiffuse ,clamp(uv + distortion*0.5, 0.0, 1.0));
     vec4 finalColor = vec4(colorR.r, colorG.g, colorB.b, 1.0);

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anil Thakor</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- tailwind css-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- bg-[#290255] -->
+<body class="text-[white] overflow-x-hidden" data-barba="wrapper">
+
+  <div class="wrapCanvas1 h-[100vh] w-[100vw] overflow-hidden z-[10] absolute bottom-0 left-0">
+   <canvas id="aboutCanvas" class="canvas bg-[transperent] h-[100vh] w-[100vw] block top-0 left-0 z-[10]"></canvas>
+ </div>
+    <section id="gallery" data-barba="container" data-barba-namespace="work" class="barba-container   ">
+    </section>
+  
+  
+  <div class="transitionButtons  bg-[#ffffffa9] text-[black] text-[1.1vw] font-semibold h-[8.5vh] w-[21vw]  absolute bottom-[4vh] flex justify-evenly items-center left-1/2 -translate-x-1/2 rounded-full z-[99]">
+    <a href="/LandingPage/" class="PageShiftButton1 w-[30%] h-[80%] flex justify-center items-center  rounded-full z-[99]"> <p>Home</p> </a>
+    <a href="/LandingPage/work" class="PageShiftButton2 w-[30%] h-[80%] flex justify-center items-center bg-[] rounded-full z-[99]"> <p>Work</p> </a>
+    <a href="/LandingPage/about" class="PageShiftButton3 w-[30%] h-[80%] flex justify-center items-center bg-[] rounded-full z-[99]"> <p>About</p> </a>
+    <div class="bgButton absolute w-[30%] h-[80%] origin-left bg-[white] rounded-full z-[10]"></div>
+    <!-- <div class="absolute w-full h-full origin-left bg-[#ffffff8a] blur-[10px] rounded-full z-[8]"></div> -->
+    <div class="absolute inset-0 backdrop-blur-[5px]  rounded-full pointer-events-none "></div>
+   
+  </div>
+
+    <nav class="absolute top-0 left-0 px-[3vw] py-[5vh] w-full flex justify-between items-start opacity- bg-blend-color-burn z-[99]  pointer-events-none">
+      <!-- Background blur layer -->
+      <div class="absolute inset-0 backdrop-blur-md  
+       [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0))] 
+        [mask-mode:match-source] pointer-events-none "></div>
+      <div class="flex gap-[2vw] h-fit pointer-events-auto z-[10]">
+          <h1 class="text-[1.5vw]  font-[Anton]">ANIL THAKOR</h1>
+          <div class=" flex gap-[0.5vw] items-center text-[1.1vw] opacity-[0.6]">
+              <i class="ri-github-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-fill"></i>
+          </div>
+      </div>
+      <div class="flex gap-[5vw]  text-[0.9vw] font-semibold pointer-events-auto z-[10] leading-none">
+          <h3 id="playSound" class="NavButton text-[0.8vw] rounded-full uppercase font-thin"><span>sound</span> <span class="ml-1">[ on ]</span></h3>
+          <h3 class="w-[20vw] text-[0.8vw] uppercase font-normal">Blending creative design with real-time graphics to build web interfaces that feel alive. From code to shader — I turn pixels into presence.</h3>
+          <h3 id="playSound" class="NavButton ml-[5vw] px-[1.9vw] py-[2.3vh] text-[1.2vw] rounded-full font-normal bg-white text-black">Let's Talk</h3>
+      </div>
+  </nav>
+ 
+
+
+<div class="transition-center fixed left-1/2 top-1/2 w-0 h-0 bg-[red] z-[999] rounded-lg -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+  <!-- <script type="module" src="./src/about.js"></script> -->
+  <!-- <script type="module" src="./src/main.js"></script> -->
+  <!-- <script type="module" src="./src/works.js"></script> -->
+  <!-- <script type="module" src="./src/barba.js"></script> -->
+  <script type="module" src="./src/manage.js"></script>
+</body>
+</html>
