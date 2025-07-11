@@ -8,62 +8,253 @@
   <!-- tailwind css-->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/LandingPage/assets/index-B7M10hq2.js"></script>
+  <script type="module" crossorigin src="/LandingPage/assets/index-DF3uGV-I.js"></script>
   <link rel="stylesheet" crossorigin href="/LandingPage/assets/index-Du3WxAfK.css">
 </head>
 <!-- bg-[#290255] -->
-<body class="  text-[white] ">
-  <!-- <div class="main relative h-[100vh] w-[100vw] overflow-hidden ">
+<body  class="  text-[white] overflow-x-hidden" data-barba="wrapper">
 
-    <div class="wrapCanvas1 h-[100vh] w-[100vw] overflow-hidden z-[10] absolute bottom-0 left-0">
-      <canvas class="canvas bg-[transperent] h-[100vh] w-[100vw] block top-0 left-0 z-[10]"></canvas>
+ <!-- <canvas  class="absolute w-[100vw] h-[100vh] top-0 left-0 z-[0]"></canvas> -->
+ 
+    <div  data-barba="container" data-barba-namespace="home" class="Home main absolute h-[100vh] w-[100vw] overflow-hidden z-[40]">
+  
+      <div class="wrapCanvas1 h-[100vh] w-[100vw] overflow-hidden z-[10] absolute bottom-0 left-0">
+        <canvas class="canvas bg-[transperent] h-[100vh] w-[100vw] block top-0 left-0 z-[10]"></canvas>
+      </div>
+     
+      <div class="videos h-[100vh] w-[100vw] overflow-hidden z-[7]">
+        <canvas id="videoCanvas" class="hidden"></canvas>
+        <video id="v1" src="videos/white.mp4"  class="opacity-0"  autoplay loop muted playsinline ></video>
+        <video id="v2" src="videos/black.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
+        <video id="v3" src="videos/blue.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
+        <video id="v4" src="videos/red.mp4"  class="opacity-0" autoplay loop muted playsinline ></video> 
+      </div>
+  
+      <div class="hero z-[20] h-full w-full  absolute top-0 left-0">
+  
+        <div class="absolute bottom-[10vh] left-0 px-[3vw] leading-none text-[1.3vw] font-normal uppercase">
+          <h4 class="">Creative Web Developer </h4>
+           <h4>Making smooth and modern </h4>
+            <h4>websites With 3D, motion </h4>
+            <h4>and clean design.</h4>
+  
+  
+        </div>
+        
+      </div>
+  
+      <div class="loadingPage h-full w-full bg-[#290255]  z-[30] absolute top-0 left-0 flex justify-center items-center">
+        <div class="loader w-[3px] h-[0vh] bg-[white] rounded-full blur-[1.5px]"></div>
+      </div>
+  
     </div>
 
-   
-    <div class="videos h-[100vh] w-[100vw] overflow-hidden z-[7]">
-      <canvas id="videoCanvas" class="hidden"></canvas>
-      <video id="v1" src="videos/white.mp4"  class="opacity-0"  autoplay loop muted playsinline ></video>
-      <video id="v2" src="videos/black.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
-      <video id="v3" src="videos/blue.mp4"  class="opacity-0" autoplay loop muted playsinline ></video>
-      <video id="v4" src="videos/red.mp4"  class="opacity-0" autoplay loop muted playsinline ></video> 
-    </div>
 
-    <div class="hero z-[20] h-full w-full  absolute top-0 left-0">
+    <section id="gallery" data-barba="container" data-barba-namespace="work" class="barba-container work  overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    </section>
 
-      <audio  controls class="opacity-0 absolute z-[0]" id="sound" src="sounds/sound2.wav" preload="auto"></audio>
-      <nav class="px-[4vw] py-[5vh] w-full flex justify-between items-center opacity-0">
-         <div class="flex gap-[2vw] h-fit"> 
-           <h1 class="text-[1.5vw]  font-[anton] tracking-wider">ANIL THAKOR</h1>
-            <div class=" flex gap-[0.5vw] items-center text-[1.1vw] opacity-[0.6]">
-              <i class="ri-github-fill"></i>      
-              <i class="ri-linkedin-box-fill"></i>   
-              <i class="ri-instagram-fill"></i>
+
+      <div data-barba="container" data-barba-namespace="about" class="barba-container  about main text-[#1A1A1A] w-full bg-[#DA382E]">
+    
+    <div class="page1 relative w-[100vw] h-[100vh] px-[3vw] flex flex-col justify-end">
+        <canvas id="aboutCanvas" class="canvas bg-[transperent] h-[100vh] w-[100vw] block top-0 left-0 z-[10]"></canvas>
+       
+        <div class="w-full h-[2px] rounded-full bg-[#1a1a1ac3]"></div>
+    
+        <div class="w-full h-[73vh] ">
+            <div class="flex justify-between items-center h-full">
+                <div class="left leading-none text-[12vw] font-[Anton] font-bold uppercase">
+                    <p id="textOnLoad" class="h-[12vw] overflow-hidden flex"> <span>A</span> <span>N</span>
+                        <span>I</span> <span>L</span> </p>
+                    <p id="textOnLoad" class="h-[12vw] overflow-hidden flex">
+                        <span>T</span><span>H</span><span>A</span><span>K</span><span>o</span><span>R</span></p>
+                </div>
+                <div class="right relative h-full flex justify-center items-center ">
+                    <div class="h-[60vh] w-[60vh] flex">
+                        <div
+                            class="self-end absolute -translate-x-[105%] -translate-y-[10%]  whitespace-nowrap text-white flex gap-2 items-center">
+                            ( <div class="beep opacity-0 w-[1vw] h-[1vw] bg-[#e7aba8] block rounded-full "></div>
+                            Hover Me )
+                        </div>
+                        <div id="aboutPageMyImg" class=" h-[60vh] w-[60vh]"> </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex gap-[2.5vw] items-center uppercase text-[0.9vw] font-semibold">
-           <h3 id="playSound"  class="NavButton px-[1.5vw] py-[1.5vh]  rounded-full">about me</h3>
-           <h3 id="playSound"  class="NavButton px-[1.5vw] py-[1.5vh]  rounded-full">works</h3>          
+            
+        
+      </div>
+      <div class="page2 w-full h-fit px-[3vw] pt-[40vh]">
+        <div class="elem relative h-[40vh] px-[2vw] py-[2vh]  flex justify-between items-center leading-[1.2] ">
+          <div id="bg" class="absolute left-0 top-0 w-0 h-full bg-[#c93a325f] z-[-1]"></div>
+          <div class="absolute top-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <p class="text-[1.3vw] capitalize italic">#intro</p>
+          <div id="scrollText" class="w-[50vw] text-[1.4vw] whitespace-nowrap font-semibold ">
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">I’m a creative web developer from India, passionate about building immersive</span></p>
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">and visually engaging experiences. I’ve been working with WebGL, Three.js,</span></p> 
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">and animation-driven websites for over 2 years now. My focus is always on</span></p>
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0"> bringing smooth micro-interactions and motion that tell a story. I truly believe</span></p>
+            <P class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">that “Every website has its own soul”. </span></P>
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">I also take freelance projects on platforms like Upwork and Fiverr. Currently,</span></p>
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">I’m a BSMS  student at one of India’s top science institutes - the</span></p>
+            <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">Indian Institute of Science Education and Research (IISER), Pune.</span></p>
+          </div>
         </div>
-      </nav>
-    </div>
-
-    <div class="loadingPage h-full w-full bg-[#290255]  z-[30] absolute top-0 left-0 flex justify-center items-center">
-      <div class="loader w-[3px] h-[0vh] bg-[white] rounded-full blur-[1.5px]"></div>
-    </div>
-
-  </div> -->
-
-  <section id="gallery" class=" absolute top-0 left-0">
-    <div class="vignette-overlay "></div>
-  </section>
-  
-  <!-- <div class="content h-full w-full absolute top-0 left-0 bg-transparent z-[5]">
+        <div class="elem relative h-[35vh] px-[2vw] py-[2vh]  flex justify-between items-center leading-[1.2] ">
+          <div id="bg" class="absolute left-0 top-0 w-0 h-full bg-[#c93a325f] z-[-1]"></div>
+          <div class="absolute top-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <p class="text-[1.3vw] capitalize italic">#Exprience</p>
+          <div class="w-[50vw] text-[1.5vw] font-semibold leading-1"> 
+            <div id="scrollText" class="w-[50vw] text-[1.4vw] font-semibold">
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">2 Years</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="elem relative h-[35vh] px-[2vw] py-[2vh]  flex justify-between items-center leading-[1.2] ">
+          <div id="bg" class="absolute left-0 top-0 w-0 h-full bg-[#c93a325f] z-[-1]"></div>
+          <div class="absolute top-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <p class="text-[1.3vw] capitalize italic">#Education</p>
+          <div class="w-[50vw] text-[1.5vw] font-semibold leading-1"> 
+            <div id="scrollText" class="w-[50vw] text-[1.4vw] font-semibold">
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">i am a 3yd year BSMS student at indian institute of science education and research " IISER , Pune"</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="elem relative h-[35vh] px-[2vw] py-[2vh]  flex justify-between items-center leading-[1.2] ">
+          <div id="bg" class="absolute left-0 top-0 w-0 h-full bg-[#c93a325f] z-[-1]"></div>
+          <div class="absolute top-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <p class="text-[1.3vw] capitalize italic">#Location</p>
+          <div class="w-[50vw] text-[1.5vw] font-semibold leading-1"> 
+            <div id="scrollText" class="w-[50vw] text-[1.4vw] font-semibold">
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">Pune , INDIA !</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="elem relative h-[35vh] px-[2vw] py-[2vh]  flex justify-between items-center leading-[1.2] ">
+          <div id="bg" class="absolute left-0 top-0 w-0 h-full bg-[#c93a325f] z-[-1]"></div>
+          <div class="absolute top-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <div class="absolute bottom-0 left-0 w-full px-[2vw] h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+          <p class="text-[1.3vw] capitalize italic">#Technical Skills</p>
+          <div class="w-[50vw] text-[1.5vw] font-semibold leading-1"> 
+            <div id="scrollText" class="w-[50vw] text-[1.4vw] font-semibold">
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">WebGL</span></p>
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">GLSL</span></p>
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">THREE.js</span></p>
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">JavaScript</span></p>
+              <p class="h-[1.5vw] overflow-hidden relative"><span class="absolute top-0 left-0">React</span></p>
+            </div>
+          </div>
+        </div>
+        
+       
+        
+      </div>
     
-  </div> -->
+      <div class="page3 relative w-[100vw] h-[100vh]  overflow-hidden ">
+        <div class="w-full h-full flex items-end">
+           <div class="absolute text-[7vw] whitespace-nowrap text-[black] font-bold font-[Anton] leading-none top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+             <p id="scrollText" class="scale-y-[150%] overflow-hidden flex">
+              <span>R</span>
+              <span>e</span>
+              <span>n</span>
+              <span>d</span>
+              <span>e</span>
+              <span>r</span>
+    
+              <span class="ml-[2vw]">Y</span>
+              <span>o</span>
+              <span>u</span>
+              <span>r</span>
+    
+              <span class="ml-[2vw]">i</span>
+              <span>m</span>
+              <span>a</span>
+              <span>g</span>
+              <span>i</span>
+              <span>n</span>
+              <span>a</span>
+              <span>t</span>
+              <span>i</span>
+              <span>o</span>
+              <span>n</span>
+             </p>    
+           </div>
+    
+           <div class="h-[35vh] w-full relative flex leading-[1.2]">
+            <div class="absolute top-0 left-0 w-full  h-[1px] rounded-full bg-[#1a1a1ac3]"></div>
+            <div class="left w-[50%] h-full leading-none ">
+              <div class="h-[50%] w-full flex justify-center items-center">
+                <div id="HoverText" class=" text-[1.2vw] font-semibold h-[1.2vw] overflow-hidden"><p>[ apcode23@gmail.com ]</p> <p> [ apcode23@gmail.com ] </p></div>
+              </div>
+              <div class="relative h-[50%] w-full flex justify-center items-center">
+                <div class="absolute top-0 left-0 w-full h-[1px]  rounded-full bg-[#1a1a1ac3] "></div>
+                <div id="HoverText" class=" text-[1.2vw] font-semibold h-[1.2vw] overflow-hidden"><p>[ +91 6352442490 ]</p> <p>[ +91 6352442490 ]</p></div>
+                <h4 class="text-[1.5vw] font-extralight"></h4>
+              </div>
+            </div>
+            <div class="right w-[50%] flex h-full justify-evenly   relative text-[1.2vw]">
+               <div class="absolute top-0 left-0 w-[1px] h-full  rounded-full bg-[#1a1a1ac3] "></div>
+               <div class="mt-[10vh]">
+                  <p class="mb-[2vh] underline underline-offset-4 font-semibold">sosials</p>
+                  <div id="HoverText" class=" h-[1.3vw] overflow-hidden"><p>Instagram</p> <p>instagram</p></div>
+                  <div id="HoverText" class=" h-[1.3vw] overflow-hidden"><p>Linkedin</p> <p>Linkedin</p></div>
+                  <div id="HoverText" class=" h-[1.3vw] overflow-hidden"><p>GitHub</p> <p>GitHub</p></div>
+               </div>
+               <div class="mt-[10vh] text-[1.2vw]">
+                  <p class="mb-[2vh] underline underline-offset-4 font-semibold">Freelance</p>
+                  <div id="HoverText" class=" h-[1.3vw] overflow-hidden"><p>Upwork</p> <p>Upwork</p></div>
+                  <div id="HoverText" class=" h-[1.3vw] overflow-hidden"><p>Fiver</p> <p>Fiver</p></div>
+               </div>
+             </div>
+           </div>
+    
+        </div>
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works3.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works5.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works6.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works8.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works15.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works1.jpg" alt="">
+        <img class="footer-image absolute w-[15vw] top-[100%] " src="images/works20.jpg" alt="">
+      </div>
+    
+    </div>
 
+ <div class="transitionButtons  bg-[#ffffffa9] text-[black] text-[1.1vw] font-semibold h-[8.5vh] w-[21vw]  absolute bottom-[4vh] flex justify-evenly items-center left-1/2 -translate-x-1/2 rounded-full z-[99]">
+    <a  class="PageShiftButton1 w-[30%] h-[80%] flex justify-center items-center  rounded-full z-[99]"> <p>Home</p> </a>
+    <a  class="PageShiftButton2 w-[30%] h-[80%] flex justify-center items-center bg-[] rounded-full z-[99]"> <p>Work</p> </a>
+    <a class="PageShiftButton3 w-[30%] h-[80%] flex justify-center items-center bg-[] rounded-full z-[99]"> <p>About</p> </a>
+    <div class="bgButton absolute w-[30%] h-[80%] origin-left bg-[white] rounded-full z-[10]"></div>
+    <!-- <div class="absolute w-full h-full origin-left bg-[#ffffff8a] blur-[10px] rounded-full z-[8]"></div> -->
+    <div class="absolute inset-0 backdrop-blur-[5px]  rounded-full pointer-events-none "></div>
+   
+  </div>
 
-  <!-- <script type="module" src="./src/about.js"></script> -->
-  <!-- <script type="module" src="./src/main.js"></script> -->
-  <!-- <script type="module" src="./src/manage.js"></script> -->
+    <nav class="fixed top-0 left-0 px-[3vw] py-[5vh] w-full flex justify-between items-start opacity- bg-blend-color-burn z-[99]  pointer-events-none">
+      <!-- Background blur layer -->
+      <div class="absolute inset-0 backdrop-blur-md  
+       [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0))] 
+        [mask-mode:match-source] pointer-events-none "></div>
+      <div class="flex gap-[2vw] h-fit pointer-events-auto z-[10]">
+          <h1 class="text-[1.5vw]  font-[Anton]">ANIL THAKOR</h1>
+          <div class=" flex gap-[0.5vw] items-center text-[1.1vw] opacity-[0.6]">
+              <i class="ri-github-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-instagram-fill"></i>
+          </div>
+      </div>
+      <div class="flex gap-[5vw]  text-[0.9vw] font-semibold pointer-events-auto z-[10] leading-none">
+          <h3 id="playSound" class="NavButton text-[0.8vw] rounded-full uppercase font-thin"><span>sound</span> <span class="ml-1">[ on ]</span></h3>
+          <h3 class="w-[20vw] text-[0.8vw] uppercase font-normal">Blending creative design with real-time graphics to build web interfaces that feel alive. From code to shader — I turn pixels into presence.</h3>
+          <h3 id="playSound" class="NavButton ml-[5vw] px-[1.9vw] py-[2.3vh] text-[1.2vw] rounded-full font-normal bg-white text-black">Let's Talk</h3>
+      </div>
+  </nav>
+ 
+
+  
+
+<div class="transition-center fixed left-1/2 top-1/2 w-0 h-0 bg-[red] z-[70] rounded-lg -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+  
+  <!-- <script type="module" src="./src/barba.js"></script> -->
 </body>
 </html>
